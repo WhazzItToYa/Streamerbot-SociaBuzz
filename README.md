@@ -20,7 +20,7 @@ Go to [Mustached Maniac's DiscoBot page](https://mustachedmaniac.com/multi-platf
 
 Decide what channel you want the donation messages to appear in. If you don't want them visible in your Discord, create a private channel for the messages.
 
-Log in to your SociaBuzz account, and [follow the instructions)(https://sociabuzz-en.freshdesk.com/support/solutions/articles/153000137297-get-notifications-on-my-discord-tribe-) to set up a Discord webhook for the channel you have chosen, and SociaBuzz notifications to use that webhook.
+Log in to your SociaBuzz account, and [follow the instructions](https://sociabuzz-en.freshdesk.com/support/solutions/articles/153000137297-get-notifications-on-my-discord-tribe-) to set up a Discord webhook for the channel you have chosen, and SociaBuzz notifications to use that webhook.
 
 <div style="float: right;">
 <img src="assets/sociabuzz-config.png" style="width: 30%;">
