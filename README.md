@@ -8,7 +8,9 @@ This is a [Streamer.bot](https://streamer.bot) extension which integrates the [S
 
 ### Install DiscoBot
 
-<img src="assets/discobot-logo.webp" style="float: left">
+<div style="float: left">
+<img src="assets/discobot-logo.webp" style="width: 15%;">
+</div>
 
 The extension relies on Discord and the DiscoBot extension to receive donation notifications, as SociaBuzz does not provide a direct way for Streamer.bot to receive them.
 
@@ -20,7 +22,9 @@ Decide what channel you want the donation messages to appear in. If you don't wa
 
 Log in to your SociaBuzz account, and [follow the instructions)(https://sociabuzz-en.freshdesk.com/support/solutions/articles/153000137297-get-notifications-on-my-discord-tribe-) to set up a Discord webhook for the channel you have chosen, and SociaBuzz notifications to use that webhook.
 
-<img src="assets/sociabuzz-config.png" style="float: left">
+<div style="float: right;">
+<img src="assets/sociabuzz-config.png" style="width: 30%;">
+</div>
 
 Use the "Send Test Message" to make sure it's working, and don't forget to activate it.
 
@@ -30,7 +34,7 @@ Leave the SociaBuzz discord integration window open for now, as you'll need it l
 
 #### Install
 In Streamer.bot, follow the standard procedure for installing an extension:
-1. Download the [SociaBuzz.sb file](https://raw.githubusercontent.com/WhazzItToYa/Streamerbot-SociaBuzz/refs/heads/main/SociaBuzz.sb), or copy the contents.
+1. Download the [SociaBuzz.sb file](https://github.com/WhazzItToYa/Streamerbot-SociaBuzz/blob/main/SociaBuzz.sb), or copy the contents.
 2. Click "Import" in Streamer.bot
 3. Drag the .sb file (if downloaded), from your Downloads folder into the "Import String" box, or paste it if you copied it right from the page.
 
