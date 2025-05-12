@@ -20,7 +20,9 @@ Decide what channel you want the donation messages to appear in. If you don't wa
 
 Log in to your SociaBuzz account, and [follow the instructions)(https://sociabuzz-en.freshdesk.com/support/solutions/articles/153000137297-get-notifications-on-my-discord-tribe-) to set up a Discord webhook for the channel you have chosen, and SociaBuzz notifications to use that webhook.
 
-SETUP IMAGE HERE
+<img src="assets/sociabuzz-config.png" style="float: left">
+
+Use the "Send Test Message" to make sure it's working, and don't forget to activate it.
 
 Leave the SociaBuzz discord integration window open for now, as you'll need it later.
 
@@ -38,6 +40,7 @@ In Streamer.bot, follow the standard procedure for installing an extension:
 2. Right-click in the window, and select "Add Variable"
   * Variable Name: `sociaBuzzDonationMessage`
   * Value: copy the "Message Format" field from your SociaBuzz discord settings.
+  ![Image](assets/copy-message.png)
 3. In the SociaBuzz setting window, click the "Send Test Message" button.
 
 You should see a sample notification from SociaBuzz appear in Discord, and in your Twitch chat, a corresponding sample "thank you" message should get sent.
