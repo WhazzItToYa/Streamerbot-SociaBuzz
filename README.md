@@ -60,6 +60,12 @@ The extension contains an "Example SociaBuzz Donation" action which demonstrates
 
 SociaBuzz lets you customize the Discord message that it sends to your server. In order for Streamer.bot to set the `donationAmount` and `donationFrom` arguments, make sure that it contains both the `{amount}` and `{supporter}` placeholders, and that you copy that updated message into the `sociaBuzzDonationMessage` global variable which you set up above.
 
+## Acknowledgements
+
+Thank you to [Mustached Maniac](https://mustachedmaniac.com/) for the awesome DiscoBot, and the changes he made specifically to support this extension.
+
+Thanks to Nate for creating the Streamer.bot tool, and the community that supports it.
+
 ## Support, Contact
 
 * For feature requests or bug reports: https://github.com/WhazzItToYa/Streamerbot-SociaBuzz/issues 
