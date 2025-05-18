@@ -84,6 +84,6 @@ Thanks to Nate for creating the Streamer.bot tool, and the community that suppor
 
 * For feature requests or bug reports: https://github.com/WhazzItToYa/Streamerbot-SociaBuzz/issues 
 * Or submit a pull request
-* Or if you can't do either of those things, ping me through the Streamer.bot Discord in the [SociaBuzz post](https://discord.com/channels/834650675224248362/XXXX)
+* Or if you can't do either of those things, ping me through the Streamer.bot Discord in the [SociaBuzz post](https://discord.com/channels/834650675224248362/1373459135663968327/1373459135663968327)
 
 
