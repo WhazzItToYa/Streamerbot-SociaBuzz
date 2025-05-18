@@ -74,6 +74,10 @@ The extension contains an "Example SociaBuzz Donation" action which demonstrates
 
 SociaBuzz lets you customize the Discord message that it sends to your server. In order for Streamer.bot to set the `donationAmount` and `donationFrom` arguments, make sure that it contains both the `{amount}` and `{supporter}` placeholders, and that you copy that updated message into the `sociaBuzzDonationMessage` global variable which you set up above.
 
+## Notes/Caveats
+
+**No Offline Donations**: This extension only monitors donations when Streamer.bot is running. Any donations that occur while Streamer.bot is closed, will not fire the donation trigger, even after Streamer.bot is restarted. Perhaps a future version will be able to catch up on donations.
+
 ## Acknowledgements
 
 Thank you to [Mustached Maniac](https://mustachedmaniac.com/) for the awesome DiscoBot, and the changes he made specifically to support this extension.
