@@ -44,9 +44,9 @@ In Streamer.bot, follow the standard procedure for installing an extension:
 
 1. In Streamer.bot, click the "Variables" button at the top, then click on the "Persisted GLobals" tab.
 2. Right-click in the window, and select "Add Variable"
-  * Variable Name: `sociaBuzzDonationMessage`
-  * Value: copy the "Message Format" field from your SociaBuzz discord settings.
-  ![Image](assets/copy-message.png)
+    * Variable Name: `sociaBuzzDonationMessage`
+    * Value: copy the "Message Format" field from your SociaBuzz discord settings.
+    ![Image](assets/copy-message.png)
 3. In the SociaBuzz setting window, click the "Send Test Message" button. You should see a sample notification from SociaBuzz appear in Discord, and in your Twitch chat, a corresponding sample "thank you" message should get sent.
 4. (optional, but recommended) add a variable for the SociaBuzz user ID, to reduce the number of discord messages that the extension has to process. Go back to the Persisted Global Variables window in step #2, and add a new variable:
     * Variable Name: `sociaBuzzUserId`
