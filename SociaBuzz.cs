@@ -6,7 +6,7 @@ public class CPHInline
 {
     public void Init()
     {
-        CPH.RegisterCustomTrigger("Donation", "SocialBuzz Donation", new string[]{"SociaBuzz"});
+        CPH.RegisterCustomTrigger("Donation", "SociaBuzzDonation", new string[]{"SociaBuzz"});
     }
 
     public bool DonationReceived()
@@ -27,14 +27,29 @@ public class CPHInline
         }
 
         // Use SocaiBuzz's own template string as the basis for the regexp to parse the discord string.
-        string donationMsg = CPH.GetGlobalVar<string?>("sociaBuzzDonationMessage", true) ?? "DONATION {amount} from {supporter}";
-        string donationPattern = donationMsg.Replace("{amount}", @"(?<currency>\D+)(?<amount>[\d\S]+)")
-            .Replace("{supporter}", @"(?<supporter>.+)");
+        string donationMsg = CPH.GetGlobalVar<string?>("sociaBuzzDonationMessage", true) ?? "Yay! {amount} from {supporter}";
+        string donationPattern = donationMsg
+            .Replace(@"\", @"\\")
+            .Replace(".", @"\.")
+            .Replace("*", @"\*")
+            .Replace("+", @"\+")
+            .Replace("[", @"\[")
+            .Replace("]", @"\]")
+            .Replace("(", @"\(")
+            .Replace(")", @"\)")
+            .Replace("|", @"\|")
+            .Replace("?", @"\?")
+            .Replace("^", @"\^")
+            .Replace("$", @"\$")
+            .Replace("{amount}", @"(?<currency>\D+)(?<amount>[\d\S]+)")
+            .Replace("{supporter}", @"(?<supporter>.+)")
+            .Replace("{", @"\{")
+            .Replace("}", @"\}");
 
         var match = Regex.Match(title, donationPattern);
         if (!match.Success)
         {
-            CPH.LogError($"""Discord Message "{title}" does not match template "{donationMsg}" """);
+            CPH.LogDebug($"""Discord Message "{title}" does not match template "{donationMsg}" (regex="{donationPattern}") """);
             return false;
         }
         

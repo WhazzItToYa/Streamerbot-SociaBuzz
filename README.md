@@ -14,7 +14,7 @@ This is a [Streamer.bot](https://streamer.bot) extension which integrates the [S
 
 The extension relies on Discord and the DiscoBot extension to receive donation notifications, as SociaBuzz does not provide a direct way for Streamer.bot to receive them.
 
-Go to [Mustached Maniac's DiscoBot page](https://mustachedmaniac.com/multi-platform-extensions/discobot-discord-integration) and follow the instructions to download, install, and configure it to work with your Discord server. The donation to download is optional, but encouraged.
+Go to [Mustached Maniac's DiscoBot page](https://mustachedmaniac.com/multi-platform-extensions/discobot-discord-integration) and follow the instructions to download, install, and configure it to work with your Discord server. The donation is optional, but encouraged.
 
 ### Set up SociaBuzz Discord Notifications
 
@@ -45,9 +45,12 @@ In Streamer.bot, follow the standard procedure for installing an extension:
   * Variable Name: `sociaBuzzDonationMessage`
   * Value: copy the "Message Format" field from your SociaBuzz discord settings.
   ![Image](assets/copy-message.png)
-3. In the SociaBuzz setting window, click the "Send Test Message" button.
-
-You should see a sample notification from SociaBuzz appear in Discord, and in your Twitch chat, a corresponding sample "thank you" message should get sent.
+3. In the SociaBuzz setting window, click the "Send Test Message" button. You should see a sample notification from SociaBuzz appear in Discord, and in your Twitch chat, a corresponding sample "thank you" message should get sent.
+4. (optional, but recommended) add a variable for the SociaBuzz user ID, to reduce the number of discord messages that the extension has to process. Go back to the Persisted Global Variables window in step #2, and add a new variable:
+  * Variable Name: `sociaBuzzUserId`
+  * Value: Get the Discord user ID of the SociaBuzz application that sends the announcements, and paste it in.  You can get it by either:
+    1. In Discord Developer mode (settings > Advanced > Developer Mode), right click on the SociaBuzz account on the donation message, and select Copy User ID
+    2. In Streamer.bot, go to Action Queues > Action History, and double-click on the "SociaBuzz Discord Message Received" action. Find the `discord.UserID` argument, right-click on the ID in the right column, and select "Copy".
 
 ## Usage
 
