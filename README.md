@@ -14,7 +14,9 @@ This is a [Streamer.bot](https://streamer.bot) extension which integrates the [S
 
 The extension relies on Discord and the DiscoBot extension to receive donation notifications, as SociaBuzz does not provide a direct way for Streamer.bot to receive them.
 
-Go to [Mustached Maniac's DiscoBot page](https://mustachedmaniac.com/multi-platform-extensions/discobot-discord-integration) and follow the instructions to download, install, and configure it to work with your Discord server. The donation is optional, but encouraged.
+Go to [Mustached Maniac's DiscoBot page](https://mustachedmaniac.com/multi-platform-extensions/discobot-discord-integration) and follow the instructions to download and install version 1.1 or newer, and configure it to work with your Discord server. The donation is optional, but encouraged.
+
+**Note: DiscoBot 1.1 or newer is required**
 
 ### Set up SociaBuzz Discord Notifications
 
