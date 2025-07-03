@@ -44,7 +44,7 @@ In Streamer.bot, follow the standard procedure for installing an extension:
 #### Configure
 
 1. Go to the configuration editor that opened up on install. If you declined to run it automatically, or closed the window, find the "SociaBuzz Configure" action, right-click the Test trigger, and click "Test".
-    ![Configuration Page](assets/configpage.png "Extension Configuration Page")
+    ![Configuration Page](assets/open-configure.png)
 2. For "SociaBuzz Discord Message", copy the "Message Format" field from your SociaBuzz discord settings.
     ![Image](assets/copy-message.png)
 3. In the SociaBuzz setting window, click the "Send Test Message" button. You should see a sample notification from SociaBuzz appear in Discord, and in your Twitch chat, a corresponding sample "thank you" message should get sent.
