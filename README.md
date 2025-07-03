@@ -39,20 +39,18 @@ In Streamer.bot, follow the standard procedure for installing an extension:
 1. Download the [SociaBuzz.sb file](https://github.com/WhazzItToYa/Streamerbot-SociaBuzz/blob/main/SociaBuzz.sb), or copy the contents.
 2. Click "Import" in Streamer.bot
 3. Drag the .sb file (if downloaded), from your Downloads folder into the "Import String" box, or paste it if you copied it right from the page.
+4. On import, it should automatically open a browser page for editing the extension's configuration, in the next section.
 
 #### Configure
 
-1. In Streamer.bot, click the "Variables" button at the top, then click on the "Persisted GLobals" tab.
-2. Right-click in the window, and select "Add Variable"
-    * Variable Name: `sociaBuzzDonationMessage`
-    * Value: copy the "Message Format" field from your SociaBuzz discord settings.
+1. Go to the configuration editor that opened up on install. If you declined to run it automatically, or closed the window, find the "SociaBuzz Configure" action, right-click the Test trigger, and click "Test".
+    ![Configuration Page](assets/configpage.png "Extension Configuration Page")
+2. For "SociaBuzz Discord Message", copy the "Message Format" field from your SociaBuzz discord settings.
     ![Image](assets/copy-message.png)
 3. In the SociaBuzz setting window, click the "Send Test Message" button. You should see a sample notification from SociaBuzz appear in Discord, and in your Twitch chat, a corresponding sample "thank you" message should get sent.
-4. (optional, but recommended) add a variable for the SociaBuzz user ID, to reduce the number of discord messages that the extension has to process. Go back to the Persisted Global Variables window in step #2, and add a new variable:
-    * Variable Name: `sociaBuzzUserId`
-    * Value: Get the Discord user ID of the SociaBuzz application that sends the announcements, and paste it in.  You can get it by either:
-        1. In Discord Developer mode (settings > Advanced > Developer Mode), right click on the SociaBuzz account on the donation message, and select Copy User ID
-        2. In Streamer.bot, go to Action Queues > Action History, and double-click on the "SociaBuzz Discord Message Received" action. Find the `discord.UserID` argument, right-click on the ID in the right column, and select "Copy".
+4. (optional, but recommended) Set "SociaBuzz Discord ID" to SociaBuzz notifcations' user ID in Discord.  You can get the ID by:
+    1. In Discord Developer mode (settings > Advanced > Developer Mode), right click on the SociaBuzz account on the donation message, and select Copy User ID
+    2. In Streamer.bot, go to Action Queues > Action History, and double-click on the "SociaBuzz Discord Message Received" action. Find the `discord.UserID` argument, right-click on the ID in the right column, and select "Copy".
 
 ## Usage
 
@@ -66,17 +64,19 @@ The trigger sets the folowing arguments:
 |------|-------------|----|
 | `donationAmount` | The numeric amount of the donation | 3, 4.1 |
 | `donationCurrency` | The currency code of the donation | "USD", "IDR" |
-| `donationFrom` | The name appearing in the donation | "Jessica" |
+| `donationFrom` | The name appearing in the donation. Note: These are not Twitch usernames. | "Jessica" |
 
 The extension contains an "Example SociaBuzz Donation" action which demonstrates uses the trigger to send the chat message.
 
 ### Changing the Discord message
 
-SociaBuzz lets you customize the Discord message that it sends to your server. In order for Streamer.bot to set the `donationAmount` and `donationFrom` arguments, make sure that it contains both the `{amount}` and `{supporter}` placeholders, and that you copy that updated message into the `sociaBuzzDonationMessage` global variable which you set up above.
+SociaBuzz lets you customize the Discord message that it sends to your server. If you do change it, then you must go back to the extension's configuration page (see instructions above for how to open it) and update "SociaBuzz Discord Message" to match.
+
+Note that the message must contain the `{amount}` and `{supporter}` placeholders, in order for the extension to parse the `donationAmount` and `donationFrom` arguments out of the messages.
 
 ## Notes/Caveats
 
-**No Offline Donations**: This extension only monitors donations when Streamer.bot is running. Any donations that occur while Streamer.bot is closed, will not fire the donation trigger, even after Streamer.bot is restarted. Perhaps a future version will be able to catch up on donations.
+**No Offline Donations**: This extension only monitors donations when Streamer.bot is running. Any donations that occur while Streamer.bot is closed, will still be delivered to your Discord server, but will not fire the donation trigger in Streamer.bot, even after Streamer.bot is restarted. Perhaps a future version will be able to catch up on missed donations.
 
 ## Acknowledgements
 
