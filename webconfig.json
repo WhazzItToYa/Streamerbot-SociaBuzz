@@ -1,0 +1,18 @@
+{
+  "title": "SociaBuzz Streamer.bot Configuration",
+  "options": [
+    {
+      "name": "sociaBuzzDonationMessage",
+      "type": "text",
+      "label": "SociaBuzz Discord Message",
+      "description": "Copy/paste it exactly from the SociaBuzz Discord configuration page",
+      "default": "DONATION {amount} from {supporter}"
+    },
+    {
+      "name": "sociaBuzzUserId",
+      "type": "text",
+      "label": "SociaBuzz Discord ID",
+      "description": "(optional) The Discord user ID of the SociaBuzz discord messages"
+    }
+  ]
+}
