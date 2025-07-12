@@ -6,11 +6,11 @@ This is a [Streamer.bot](https://streamer.bot) extension which integrates the [S
 
 There are two different ways to integrate SociaBuzz into Streamer.bot: A Streamer.bot webhook, or Discord notification messages.
 
-1. [Custom Streamer.bot Webhooks](Webhook): Uses Streamer.bot custom webhooks
+1. [Custom Streamer.bot Webhooks](Webhook.md): Uses Streamer.bot custom webhooks
     * Much simpler to set up than the Discord option.
     * Requires Streamer.bot 1.0.0 or newer.
     * Requires a subscription to one of Streamer.bot's Patreon support tiers
-2. [Discord Notifications](Discord): Monitors for SociaBuzz notifications in your Discord server
+2. [Discord Notifications](Discord.md): Monitors for SociaBuzz notifications in your Discord server
     * More complicated Discord setup.
     * Can be used with Streamer.bot 0.2.8 or 1.0.0.
 
