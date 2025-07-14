@@ -39,7 +39,7 @@ Leave the SociaBuzz discord integration window open for now, as you'll need it l
 
 #### Install
 In Streamer.bot, follow the standard procedure for installing an extension:
-1. Download the [SociaBuzz.sb file](https://github.com/WhazzItToYa/Streamerbot-SociaBuzz/blob/main/SociaBuzz.sb), or copy the contents.
+1. Download the [SociaBuzz.sb file](https://github.com/WhazzItToYa/Streamerbot-SociaBuzz/blob/sbot028/SociaBuzz.sb), or copy the contents.
 2. Click "Import" in Streamer.bot
 3. Drag the .sb file (if downloaded), from your Downloads folder into the "Import String" box, or paste it if you copied it right from the page.
 4. On import, it should automatically open a browser page for editing the extension's configuration, in the next section.
