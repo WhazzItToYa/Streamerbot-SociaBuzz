@@ -4,15 +4,18 @@ This is a [Streamer.bot](https://streamer.bot) extension which integrates the [S
 
 ## Installation and Setup
 
+> [!WARNING]
+> This version of the extension requires Streamer.bot 1.0.0 or newer. For the version compatible with 0.2.8, but that doesn't support webhook notifications, see [the old version](https://github.com/WhazzItToYa/Streamerbot-SociaBuzz/tree/sbot028)
+
 There are two different ways to integrate SociaBuzz into Streamer.bot: A Streamer.bot webhook, or Discord notification messages.
 
 1. [Custom Streamer.bot Webhooks](Webhook.md): Uses Streamer.bot custom webhooks
     * Much simpler to set up than the Discord option.
-    * Requires Streamer.bot 1.0.0 or newer.
     * Requires a subscription to one of Streamer.bot's Patreon support tiers
 2. [Discord Notifications](Discord.md): Monitors for SociaBuzz notifications in your Discord server
-    * More complicated Discord setup.
-    * Can be used with Streamer.bot 0.2.8 or 1.0.0.
+    * More complicated to set up integration with Discord (if you don't already use the DiscoBot extension)
+    * Requires a Discord server
+    * Good if you actually want donation notifications in your Discord (but they can be made private if you'd like)
 
 ## Usage
 
@@ -32,7 +35,7 @@ The extension contains an "Example SociaBuzz Donation" action which demonstrates
 
 ### Changing the Discord message
 
-SociaBuzz lets you customize the Discord message that it sends to your server. If you do change it, then you must go back to the extension's configuration page (see instructions above for how to open it) and update "SociaBuzz Discord Message" to match.
+In the Discord configuration of the extension, SociaBuzz lets you customize the Discord message that it sends to your server. If you do change it, then you must go back to the extension's configuration page (see instructions above for how to open it) and update "SociaBuzz Discord Message" to match.
 
 Note that the message must contain the `{amount}` and `{supporter}` placeholders, in order for the extension to parse the `donationAmount` and `donationFrom` arguments out of the messages.
 
