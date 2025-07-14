@@ -6,6 +6,9 @@ This is a [Streamer.bot](https://streamer.bot) extension which integrates the [S
 
 ## Installation
 
+> [!WARNING]
+> This version of the extension is for Streamer.bot 0.2.8. For 1.0.0 (supporting both Discord and Custom Webhooks), see [https://github.com/WhazzItToYa/Streamerbot-SociaBuzz/tree/main]
+
 ### Install DiscoBot
 
 <div style="float: left">
